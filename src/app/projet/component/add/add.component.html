@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="mb-3">
+    <label  class="form-label">Libelle</label>
+    <input type="text" [(ngModel)]="projet.Libelle"  class="form-control">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Description</label>
+    <input [(ngModel)]="projet.Description" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">SprintDays</label>
+    <input [(ngModel)]="projet.SprintDays" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Date debut</label>
+    <input [(ngModel)]="projet.DateDebut" type="date" class="form-control">
+  </div>
+  {{projet|json}}
+  <button  class="btn btn-primary" (click)="Ajouter(projet)" >Submit</button>
+</div>
+

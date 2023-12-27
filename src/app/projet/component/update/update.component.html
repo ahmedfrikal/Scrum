@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="mb-3">
+    <label  class="form-label">Libelle</label>
+    <input type="text" [(ngModel)]="projet.Libelle"  class="form-control">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Description</label>
+    <input [(ngModel)]="projet.Description" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">SprintDays</label>
+    <input [(ngModel)]="projet.SprintDays" type="number" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Date debut</label>
+    <!-- Utilisez (input) pour formater la date à la volée -->
+    <input type="datetime-local" [ngModel]="projet.DateDebut "  class="form-control">
+  </div>
+
+  <button  class="btn btn-primary" (click)="Update(projet)" >Submit</button>
+</div>
+
